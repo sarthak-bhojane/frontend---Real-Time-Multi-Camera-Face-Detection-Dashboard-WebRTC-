@@ -3,7 +3,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import Hls from 'hls.js';
 import './App.css';
 
-const API_BASE = 'http://localhost:4000'; // hardcoded as you requested (no .env)
+// const API_BASE = 'http://localhost:4000'; // hardcoded as you requested (no .env)
+const API_BASE = 'https://backend-real-time-multi-camera-face.onrender.com';
 
 export default function App() {
   const [route, setRoute] = useState('login');
