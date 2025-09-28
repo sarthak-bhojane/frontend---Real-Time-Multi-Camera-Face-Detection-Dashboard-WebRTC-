@@ -1,0 +1,33 @@
+:root { --bg:#f5f7fb; --card:#fff; --accent:#1f6feb; --muted:#777; }
+*{box-sizing:border-box;font-family:Inter, system-ui, Arial, sans-serif}
+body{margin:0;background:var(--bg);color:#111}
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;background:#fff;border-bottom:1px solid #eee;box-shadow:0 1px 0 rgba(0,0,0,0.03)}
+.topbar h1{font-size:16px;margin:0}
+.top-actions{display:flex;gap:8px;align-items:center}
+.user-badge{background:#eee;padding:6px 10px;border-radius:999px;font-size:13px}
+.btn{background:var(--accent);color:#fff;border:none;padding:8px 10px;border-radius:8px;cursor:pointer}
+.btn.small{padding:6px 8px;font-size:13px}
+.btn.outline{background:transparent;color:var(--accent);border:1px solid var(--accent)}
+.container{display:flex;gap:16px;padding:20px;max-width:1200px;margin:18px auto}
+.left{width:360px}
+.right{flex:1}
+.card{background:var(--card);padding:12px;border-radius:10px;box-shadow:0 4px 18px rgba(0,0,0,0.04);margin-bottom:12px}
+.cam-list{margin-top:8px}
+.cam-row{display:flex;align-items:center;justify-content:space-between;padding:8px;border-bottom:1px dashed #f0f0f0}
+.muted{color:var(--muted);padding:8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.tile{background:#fff;padding:8px;border-radius:10px;box-shadow:0 6px 20px rgba(0,0,0,0.04)}
+.video-frame{position:relative;height:150px;background:#000;border-radius:8px;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.video-placeholder{color:#fff;font-weight:700;text-align:center}
+.video-status{font-size:12px;margin-top:6px;opacity:0.9}
+.overlay-badges{position:absolute;top:8px;left:8px;display:flex;gap:6px}
+.badge{background:rgba(0,0,0,0.5);color:#fff;padding:4px 8px;border-radius:999px;font-size:12px}
+.tile-controls{display:flex;gap:8px;margin-top:8px}
+.alerts{margin-top:8px;max-height:160px;overflow:auto}
+.alert-row{padding:6px;border-top:1px solid #f3f3f3}
+.alert-item{display:flex;align-items:center;justify-content:space-between;padding:8px;border-bottom:1px solid #fafafa}
+.auth{display:flex;align-items:center;justify-content:center;height:100vh}
+.auth-card{background:#fff;padding:20px;border-radius:12px;box-shadow:0 8px 30px rgba(0,0,0,0.06);width:320px}
+.auth-card input{width:100%;padding:10px;margin-top:8px;border-radius:8px;border:1px solid #eee}
+.error{background:#ffe9e9;color:#900;padding:8px;border-radius:8px}
+.footer{padding:12px 20px;text-align:center;color:#666}
