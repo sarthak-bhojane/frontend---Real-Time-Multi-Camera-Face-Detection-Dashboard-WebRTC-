@@ -114,7 +114,7 @@ export default function App() {
   return (
     <div className="app-container">
       <header className="topbar">
-        <div className="title">Surveillance Dashboard</div>
+        <div className="title">Dashboard</div>
         <div className="controls">
           <span className="user">Hello, {user?.username}</span>
           <button className="btn" onClick={logout}>Logout</button>
@@ -156,10 +156,11 @@ function LoginForm({ onLogin, onRegister }) {
       <h2>Login / Register</h2>
       <input placeholder="Username" value={username} onChange={e => setUsername(e.target.value)} />
       <input placeholder="Password" type="password" value={password} onChange={e => setPassword(e.target.value)} />
-      <div style={{ display:'flex', gap: '10px' }}>
+      <div style={{ display:'flex', gap: '10px', flexDirection: 'row', justifyContent: 'center' }}>
         <button className="btn" onClick={() => onLogin(username, password)}>Login</button>
         <button className="btn" onClick={() => onRegister(username, password)}>Register</button>
       </div>
+      <h4> enter username and password, click on registeration. registeration success. then login</h4>
     </div>
   );
 }
