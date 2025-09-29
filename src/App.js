@@ -160,7 +160,7 @@ function LoginForm({ onLogin, onRegister }) {
         <button className="btn" onClick={() => onLogin(username, password)}>Login</button>
         <button className="btn" onClick={() => onRegister(username, password)}>Register</button>
       </div>
-      <h4> enter username and password, click on registeration. registeration success. then login</h4>
+      <h4>Enter username and password, then Click on "registration". once registration is succeed. then login</h4>
     </div>
   );
 }
